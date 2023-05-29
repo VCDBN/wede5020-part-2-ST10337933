@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="news.css">
+    <title>News</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-content">
+            <div class="logo">
+                <div class="logo-logo">
+                    <img src="IMAGES/logo.jpg">
+                </div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="index.html">
+                    <i class='bx bxs-home'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="about.html">
+                    <i class='bx bxs-group'></i>
+                    <span class="links_name">About Us</span>
+                </a>
+                <span class="tooltip">About</span>
+            </li>
+            <li>
+                <a href="services.html">
+                    <i class='bx bxs-server'></i>
+                    <span class="links_name">Services</span>
+                </a>
+                <span class="tooltip">Services</span>
+            </li>
+            <li>
+                <a href="news.html">
+                    <i class='bx bxs-news'></i>
+                    <span class="links_name">News</span>
+                </a>
+                <span class="tooltip">News</span>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <i class='bx bxs-contact'></i>
+                    <span class="links_name">Contact Us</span>
+                </a>
+                <span class="tooltip">Contact</span>
+            </li>
+            <li>
+                <a href="donations.html">
+                    <i class='bx bxs-bank'></i>
+                    <span class="links_name">Donate</span>
+                </a>
+                <span class="tooltip">Donate</span>
+            </li>
+            <li>
+                <a href="login.html">
+                    <i class='bx bxs-user'></i>
+                    <span class="links_name">Sign in</span>
+                </a>
+                <span class="tooltip">Sign in</span>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector("bx-search")
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+        searchBtn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
+<!--html for the navigationbar-->
+
+<!--the news conontent starts from here-->
+<div class="newsSection">
+    <div class="section-content">
+        <div class="title">
+            <h1>NEWS</h1>
+            <p>Keep up to date with our news and projects.</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="images">
+                    <img src="/IMAGES/news1.jpg">
+                </div>
+                <div class="blog">
+                    <h3>Homelessness on the rise</h3>
+                    <p>Homelessness have almost doubled in 
+                       the past 2 years in South Africa,
+                       due to the increase of unemployment and 
+                       economic policies.We plan to combat 
+                       Homelessness throughout South Africa.
+                    </p>
+                </div>
+                <div class="blogInfo">
+                    <a href="" class="read-more">Read more</a>
+                </div>
+                <div class="posted">
+                    <p>3 April 2023</p>
+<!--this is the code of what the cards consist of-->
+                </div>
+            </div>
+            <div class="card">
+                <div class="images">
+                    <img src="/IMAGES/news2.jpg">
+                </div>
+                <div class="blog">
+                    <h3>Helping them overcome addictions</h3>
+                    <p>At our shelters we provide rehabilitation
+                       programs to ensure they have a fighting chance 
+                       against their substance abuse all across 
+                       South Africa.
+                    </p>
+                </div>
+                <div class="blogInfo">
+                    <a href="" class="read-more">Read more</a>
+                </div>
+                <div class="posted">
+                    <p>3 April 2023</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="images">
+                    <img src="/IMAGES/news3.jpg">
+                </div>
+                <div class="blog">
+                    <h3>Restoring their dignity</h3>
+                    <p>Through our programs we help to 
+                       Create purpose and restore their
+                       dignity.We help the homeless to 
+                       become self-suffiecient and earn
+                       their own money.
+                    </p>
+                </div>
+                <div class="blogInfo">
+                    <a href="" class="read-more">Read more</a>
+                </div>
+                <div class="posted">
+                    <p>3 April 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-left">
+        <img src="IMAGES/logo.jpg">
+        <p>We provide numerous services to the homeless.
+           We provide tempoerary shelters and soup kitchens
+           to ensure everyone has a safe bed to sleep in and a 
+           full stomach all across South Africa.
+        </p>
+        <div class="socials">
+            <a href="#"><i class='bx bxl-facebook-square'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+        </div>
+    </div>
+    <ul class="footer-right">
+        <li>
+            <h2>Quick Links</h2>
+
+            <ul class="box">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </li>
+        <li class="features">
+           <h2>Donate Now</h2>
+
+           <ul class="box">
+            <li><a href="donations.html">Donate Now</a></li>
+            <li><a href="donations.html">Monthly Debit Order</a></li>
+            <li><a href="donations.html">Subscribe</a></li>
+            <li><a href="form.html">Volunteer Now</a></li>
+           </ul>
+        </li>
+        <li>
+           <h2>contact</h2>
+
+           <ul class="box">
+            <li><a href="contact.html">+27 68 347 0249</a></li>
+            <li><a href="contact.html">creatingpurpose@gmail.com</a></li>
+            <li><a href="contact.html">12 Radar Dr, Durban North, Durban, 4051</a></li>
+            <li><a href="contact.html">something</a></li>
+           </ul>
+        </li>
+    </ul>
+    <footer class="footer-bottom">
+        <p>All rights reserved by &copy;Creating Purpose 2023.</p>
+    </footer>
+</footer>
+</body>
+</html>

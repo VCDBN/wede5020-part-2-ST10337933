@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <title>About Us</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-content">
+            <div class="logo">
+                <div class="logo-logo">
+                    <img src="IMAGES/logo.jpg">
+                </div>
+            </div>
+            <!--the logo for the website-->
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <!--this is the search bar in the navigation bar-->
+            <li>
+                <a href="index.html">
+                    <i class='bx bxs-home'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <!--this is the home button in the navigation bar-->
+            <li>
+                <a href="about.html">
+                    <i class='bx bxs-group'></i>
+                    <span class="links_name">About Us</span>
+                </a>
+                <span class="tooltip">About</span>
+            </li>
+            <!--this is the about button in the navigation bar-->
+            <li>
+                <a href="services.html">
+                    <i class='bx bxs-server'></i>
+                    <span class="links_name">Services</span>
+                </a>
+                <span class="tooltip">Services</span>
+            </li>
+            <!--this is the services button in the navigation bar-->
+            <li>
+                <a href="news.html">
+                    <i class='bx bxs-news'></i>
+                    <span class="links_name">News</span>
+                </a>
+                <span class="tooltip">News</span>
+            </li>
+            <!--this is the news button in the navigation bar-->
+            <li>
+                <a href="contact.html">
+                    <i class='bx bxs-contact'></i>
+                    <span class="links_name">Contact Us</span>
+                </a>
+                <span class="tooltip">Contact</span>
+            </li>
+            <!--this is the contact button in the navigation bar3-->
+            <li>
+                <a href="donations.html">
+                    <i class='bx bxs-bank'></i>
+                    <span class="links_name">Donate</span>
+                </a>
+                <span class="tooltip">Donate</span>
+            </li>
+            <!--this is the donations button for the naivigation bar-->
+            <li>
+                <a href="login.html">
+                    <i class='bx bxs-user'></i>
+                    <span class="links_name">Sign in</span>
+                </a>
+                <span class="tooltip">Sign in</span>
+            </li>
+            <!--this is the login form for the naviagtion bar-->
+        </ul>
+    </div>
+<!--the javascript for the side menu starts here-->
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector("bx-search")
+//using the query selector to link with the html
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+        //using the onclick function to activate the menu
+        searchBtn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+    </script>
+    <!--the java script for the navigation ends here-->
+    
+    <h1>Individuals Creating Purpose helped</h1>
+    <div class="container">
+        <input type="radio" name="dot" id="one">
+        <input type="radio" name="dot" id="two">
+        <div class="main-cards">
+            <div class="cards">
+              <div class="card">
+                <div class="content">
+                    <div class="img">
+                        <img src="IMAGES/aboutslide1.jpg">
+                    </div>
+                    <div class="details">
+                        <div class="name">Charlotte Evans</div>
+                        <div class="job">Homeless for 9 years, now <br> works as a receptionist.</div>
+                    </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                    <div class="img">
+                        <img src="IMAGES/aboutslide2.jpg">
+                    </div>
+                    <div class="details">
+                        <div class="name">Benjamin Franklin</div>
+                        <div class="job">Homeless for 5 years, now <br> works as a contractor.</div>
+                    </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                    <div class="img">
+                        <img src="IMAGES/aboutslide3.jpg">
+                    </div>
+                    <div class="details">
+                        <div class="name">Emma Brown</div>
+                        <div class="job">Homeless for 12 years, now <br> works as a libarian.</div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                  <div class="content">
+                      <div class="img">
+                          <img src="IMAGES/aboutslide4.jpg">
+                      </div>
+                      <div class="details">
+                          <div class="name">Noah Powell</div>
+                          <div class="job">Homeless for 20 years, now <br> works as a waiter.</div>
+                      </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="content">
+                      <div class="img">
+                          <img src="IMAGES/aboutslide5.jpg">
+                      </div>
+                      <div class="details">
+                          <div class="name">Oliver Twist</div>
+                          <div class="job">Homeless for 15 years, now <br> owns a food truck.</div>
+                      </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="content">
+                      <div class="img">
+                          <img src="IMAGES/aboutslide6.jpg">
+                      </div>
+                      <div class="details">
+                          <div class="name">Ethan Ackers</div>
+                          <div class="job">Homeless for 25 years, now <br> works in a retail store.</div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="button">
+            <label for="one" class="one active"></label>
+            <label for="two" class="two"></label>
+        </div>
+    </div>
+    <br>
+    <div class="heading">
+        <h1>OUR VISION</h1>
+        <p>To create employment for the unemployed and the homeless
+            by the smallest gesture from our hearts to theirs thus 
+            creating purpose<span>~Araav Dhanraj.</span>
+        </p>
+    </div>
+    <div class="container">
+        <div class="about">
+            <div class="about-image">
+                <img src="/IMAGES/about.jpg">
+            </div>
+    </div>
+    <div class="about-content">
+        <h2>OUR MISSION</h2>
+        <p>Creating purpose whilst uplifting the 
+            homeless and restoring their dignity, 
+            acceptance into society ultimately 
+            giving them a fighting chance to 
+            become better then they was yesterday.
+        </p>
+        <div class="about-image">
+            <img src="/IMAGES/about2.jpg">
+        </div>
+     <h3>What we do</h3>
+     <p>We provide numerous services to the homeless.
+        We provide tempoerary shelters and soup kitchens
+        to ensure everyone has a safe bed to sleep in and a 
+        full stomach all across South Africa. At our shelters 
+        we provide rehabilitation centres to ensure everyone 
+        has a fighting chance in life and escape their substance 
+        addictions.
+     </p>
+     <div class="readmore">
+        <a href="services.html">Read more</a>
+     </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-left">
+        <img src="IMAGES/logo.jpg">
+        <p>We provide numerous services to the homeless.
+           We provide tempoerary shelters and soup kitchens
+           to ensure everyone has a safe bed to sleep in and a 
+           full stomach all across South Africa.
+        </p>
+        <div class="socials">
+            <a href="#"><i class='bx bxl-facebook-square'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+        </div>
+    </div>
+    <ul class="footer-right">
+        <li>
+            <h2>Quick Links</h2>
+
+            <ul class="box">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </li>
+        <li class="features">
+           <h2>Donate Now</h2>
+
+           <ul class="box">
+            <li><a href="donations.html">Donate Now</a></li>
+            <li><a href="donations.html">Monthly Debit Order</a></li>
+            <li><a href="donations.html">Subscribe</a></li>
+            <li><a href="form.html">Volunteer Now</a></li>
+           </ul>
+        </li>
+        <li>
+           <h2>contact</h2>
+
+           <ul class="box">
+            <li><a href="contact.html">+27 68 347 0249</a></li>
+            <li><a href="contact.html">creatingpurpose@gmail.com</a></li>
+            <li><a href="contact.html">12 Radar Dr, Durban North, Durban, 4051</a></li>
+            <li><a href="contact.html">something</a></li>
+           </ul>
+        </li>
+    </ul>
+    <footer class="footer-bottom">
+        <p>All rights reserved by &copy;Creating Purpose 2023.</p>
+    </footer>
+</footer>
+</body>
+</html>

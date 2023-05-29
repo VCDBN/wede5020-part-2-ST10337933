@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="donations.css">
+    <title>Donate</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-content">
+            <div class="logo">
+                <div class="logo-logo">
+                    <img src="IMAGES/logo.jpg">
+                </div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="index.html">
+                    <i class='bx bxs-home'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="about.html">
+                    <i class='bx bxs-group'></i>
+                    <span class="links_name">About Us</span>
+                </a>
+                <span class="tooltip">About</span>
+            </li>
+            <li>
+                <a href="services.html">
+                    <i class='bx bxs-server'></i>
+                    <span class="links_name">Services</span>
+                </a>
+                <span class="tooltip">Services</span>
+            </li>
+            <li>
+                <a href="news.html">
+                    <i class='bx bxs-news'></i>
+                    <span class="links_name">News</span>
+                </a>
+                <span class="tooltip">News</span>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <i class='bx bxs-contact'></i>
+                    <span class="links_name">Contact Us</span>
+                </a>
+                <span class="tooltip">Contact</span>
+            </li>
+            <li>
+                <a href="donations.html">
+                    <i class='bx bxs-bank'></i>
+                    <span class="links_name">Donate</span>
+                </a>
+                <span class="tooltip">Donate</span>
+            </li>
+            <li>
+                <a href="login.html">
+                    <i class='bx bxs-user'></i>
+                    <span class="links_name">Sign in</span>
+                </a>
+                <span class="tooltip">Sign in</span>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector("bx-search")
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+        searchBtn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+    </script> 
+
+<div class="wrapper">
+    <h1>Help us end homelessness.</h1>
+    <p></p>
+    <div class="content-box">
+        <div class="card">
+           <a href="donations.html">
+               <i class='bx bxs-bank bx-md'></i>
+               <h2>Donate Now</h2>
+           </a>
+        </div>
+        <div class="card">
+           <a href="donations.css">
+               <i class='bx bxs-credit-card-alt bx-md'></i>
+               <h2>Monthly debit order</h2>
+           </a>
+        </div>
+        <div class="card">
+            <a href="donations.html">
+                <i class='bx bxs-calendar bx-md'></i>
+                <h2>Subscribe to our packages</h2>
+            </a>
+        </div>
+        <div class="card">
+            <a href="form.html">
+                <i class='bx bxs-help-circle bx-md'></i>
+                <h2>Volunteer Now</h2>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="subscribe">
+    <input type="radio" name="slider" id="tab-1">
+    <input type="radio" name="slider" id="tab-2" checked>
+    <input type="radio" name="slider" id="tab-3">
+  <header>
+    <label for="tab-1" class="tab-1">Basic</label>
+    <label for="tab-2" class="tab-2">Standard</label>
+    <label for="tab-3" class="tab-3">Best</label>
+    <div class="slider"></div>
+  </header>
+  <div class="cards-area">
+    <div class="cards">
+        <div class="row row-1">
+            <div class="pricing-details">
+                <span>20</span>
+                <p>Support up to 2 individuals</p>
+            </div>
+            <ul class="features">
+                <li><i class='bx bx-check'></i><span>Provides 2 individuals with meals</span></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="pricing-details">
+                <span>100</span>
+                <p>Support up to 10 individuals</p>
+            </div>
+            <ul class="features">
+                <li><i class='bx bx-check'></i><span>Provides 10 individuals with meals</span></li>
+        </div>
+        <div class="row">
+            <div class="pricing-details">
+                <span>50</span>
+                <p>Support up to 5 individuals</p>
+            </div>
+            <ul class="features">
+                <li><i class='bx bx-check'></i><span>Provides 5 individualswith meals</span></li>
+            </ul>
+        </div>
+    </div>
+  </div>
+  <button>choose plan</button>
+</div>
+
+<footer class="footer">
+    <div class="footer-left">
+        <img src="IMAGES/logo.jpg">
+        <p>We provide numerous services to the homeless.
+           We provide tempoerary shelters and soup kitchens
+           to ensure everyone has a safe bed to sleep in and a 
+           full stomach all across South Africa.
+        </p>
+        <div class="socials">
+            <a href="#"><i class='bx bxl-facebook-square'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+        </div>
+    </div>
+    <ul class="footer-right">
+        <li>
+            <h2>Quick Links</h2>
+
+            <ul class="box">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </li>
+        <li class="features">
+           <h2>Donate Now</h2>
+
+           <ul class="box">
+            <li><a href="donations.html">Donate Now</a></li>
+            <li><a href="donations.html">Monthly Debit Order</a></li>
+            <li><a href="donations.html">Subscribe</a></li>
+            <li><a href="form.html">Volunteer Now</a></li>
+           </ul>
+        </li>
+        <li>
+           <h2>contact</h2>
+
+           <ul class="box">
+            <li><a href="contact.html">+27 68 347 0249</a></li>
+            <li><a href="contact.html">creatingpurpose@gmail.com</a></li>
+            <li><a href="contact.html">12 Radar Dr, Durban North, Durban, 4051</a></li>
+            <li><a href="contact.html">something</a></li>
+           </ul>
+        </li>
+    </ul>
+    <footer class="footer-bottom">
+        <p>All rights reserved by &copy;Creating Purpose 2023.</p>
+    </footer>
+</footer>
+</body>
+</html>
